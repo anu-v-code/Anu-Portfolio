@@ -1,0 +1,135 @@
+/* Reset some default margins */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8fc;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #d8b4e2;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header .highlight {
+    color: #ffe4fa;
+    font-style: italic;
+}
+
+.tagline {
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #b266b2;
+}
+
+/* Section Style */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* About Section */
+#about {
+    background-color: #ffd7f0;
+    border-radius: 20px;
+    margin: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 3px solid #d8b4e2;
+}
+
+/* Project Cards */
+.project-card {
+    background: lch(89.42% 21.86 331.52);
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-radius: 15px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background: #f1d4f7;
+}
+
+/* Contact Section */
+#contact a {
+    color: #b266b2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #d8b4e2;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 30px 30px 0 0;
+    margin-top: 2rem;
+}
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999; /* make sure hearts appear on top */
+}
+
+.hearts span {
+  position: absolute;
+  font-size: 20px;
+  animation: float 6s infinite;
+  opacity: 0.8;
+}
+
+.hearts span:nth-child(1) { left: 10%; animation-delay: 0s; }
+.hearts span:nth-child(2) { left: 30%; animation-delay: 1s; }
+.hearts span:nth-child(3) { left: 50%; animation-delay: 2s; }
+.hearts span:nth-child(4) { left: 70%; animation-delay: 3s; }
+.hearts span:nth-child(5) { left: 90%; animation-delay: 4s; }
+
+@keyframes float {
+  0% { transform: translateY(100vh) scale(0.5); opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
